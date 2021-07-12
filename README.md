@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://npmjs.com/package/storyblok-js-client">
-    <img src="https://img.shields.io/npm/v/storyblok-js-client/latest.svg?style=flat-square" alt="Storyblok JS Client" />
+    <img src="https://img.shields.io/npm/v/storyblok-js-client/latest.svg?style=flat-square&color=09b3af" alt="Storyblok JS Client" />
   </a>
   <a href="https://discord.gg/jKrbAMz">
    <img src="https://img.shields.io/discord/700316478792138842?label=Join%20Our%20Discord%20Community&style=appveyor&logo=discord&color=09b3af">
