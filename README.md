@@ -1,19 +1,35 @@
-# Universal JavaScript SDK for Storyblok's API
-[![npm (scoped with tag)](https://img.shields.io/npm/v/storyblok-js-client/latest.svg?style=flat-square)](https://npmjs.com/package/storyblok-js-client)
+<div align="center">
+	<h1 align="center">Universal JavaScript SDK for Storyblok's API</h1>
+	<p align="center">This client is a thin wrapper for the [Storyblok](http://www.storyblok.com) API's to use in Node.js and the browser.</p>
+</div>
 
-This client is a thin wrapper for the Storyblok API's to use in Node.js and the browser.
+<p align="center">
+  <a href="https://npmjs.com/package/storyblok-js-client">
+    <img src="https://img.shields.io/npm/v/storyblok-js-client/latest.svg?style=flat-square" alt="Storyblok JS Client" />
+  </a>
+  <a href="https://discord.gg/jKrbAMz">
+   <img src="https://img.shields.io/discord/700316478792138842?label=Join%20Our%20Discord%20Community&style=appveyor&logo=discord&color=09b3af">
+   </a>
+<a href="https://twitter.com/intent/follow?screen_name=storyblok">
+    <img src="https://img.shields.io/badge/Follow-%40storyblok-09b3af?style=appveyor&logo=twitter" alt="Follow @Storyblok" />
+  </a><br/>
+<a href="https://twitter.com/intent/follow?screen_name=storyblok">
+    <img src="https://img.shields.io/badge/Try%20Storyblok-Free-09b3af?style=appveyor&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAHqADAAQAAAABAAAAHgAAAADpiRU/AAACRElEQVRIDWNgGGmAEd3D3Js3LPrP8D8WXZwSPiMjw6qvPoHhyGYwIXNAbGpbCjbzP0MYuj0YFqMroBV/wCxmIeSju64eDNzMBJUxvP/9i2Hnq5cM1devMnz984eQsQwETeRhYWHgIcJiXqC6VHlFBjUeXgav40cIWkz1oLYXFmGwFBImaDFBHyObcOzdW4aSq5eRhRiE2dgYlpuYoYSKJi8vw3GgWnyAJIs/AuPu4scPGObd/fqVQZ+PHy7+6udPOBsXgySLDfn5GRYYmaKYJcXBgWLpsx8/GPa8foWiBhuHJIsl2DkYQqWksZkDFgP5PObcKYYff//iVAOTIDlx/QPqRMb/YSYBaWlOToZIaVkGZmAZSQiQ5OPtwHwacuo4iplMQEu6tXUZMhSUGDiYmBjylFQYvv/7x9B04xqKOnQOyT5GN+Df//8M59ASXKyMHLoyDD5JPtbj42OYrm+EYgg70JfuYuIoYmLs7AwMjIzA+uY/zjAnyWJpDk6GOFnCvrn86SOwmsNtKciVFAc1ileBHFDC67lzG10Yg0+SjzF0ownsf/OaofvOLYaDQJoQIGix94ljv1gIZI8Pv38zPvj2lQWYf3HGKbpDCFp85v07NnRN1OBTPY6JdRSGxcCw2k6sZuLVMZ5AV4s1TozPnGGFKbz+/PE7IJsHmC//MDMyhXBw8e6FyRFLv3Z0/IKuFqvFyIqAzd1PwBzJw8jAGPfVx38JshwlbIygxmYY43/GQmpais0ODDHuzevLMARHBcgIAQAbOJHZW0/EyQAAAABJRU5ErkJggg==" alt="Follow @Storyblok" />
+  </a>
+</p>
 
+## 🚀 Usage
 
-## Install
+### Install
 
 ```sh
 # as axios is a peerDependency, you should install it too
 npm install storyblok-js-client axios # yarn add storyblok-js-client axios
 ```
 
-## Usage
+### How to use it
 
-### Using the Content Deliver API
+#### Using the Content Deliver API
 
 ```javascript
 // 1. Require the Storyblok client
@@ -26,7 +42,7 @@ let Storyblok = new StoryblokClient({
 })
 ```
 
-### Using the Content Management API
+#### Using the Content Management API
 
 ```javascript
 // 1. Require the Storyblok client
@@ -44,7 +60,7 @@ Storyblok.put(`spaces/${spaceId}/stories/1`, {story: {name: 'xy', slug: 'xy'}})
 Storyblok.delete(`spaces/${spaceId}/stories/1`, null)
 ```
 
-### Using the RichTextResolver separately
+#### Using the RichTextResolver separately
 
 You can import and use the `RichTextResolver` directly:
 
@@ -62,7 +78,7 @@ const resolver = new RichTextResolver()
 const html = resolver.render(data)
 ```
 
-### Using from the Browser directly
+#### Using from the Browser directly
 
 This package has a standalone version that contains all dependencies and you can use it to import and use our package inside the browser.
 
@@ -84,7 +100,7 @@ If you want a bundle with Babel (for non-es6 browsers):
 <script src="https://cdn.jsdelivr.net/npm/storyblok-js-client@4.0.5/dist/es5/rich-text-resolver.standalone.js"></script>
 ```
 
-### Note about use of Babel
+#### Note about use of Babel
 
 This package doesn't use the Babel by default in the final bundle. So, if you want a Babel transpiled file, you need to set the `es5/` prefix on import:
 
@@ -96,9 +112,9 @@ const StoryblokClient = require('storyblok-js-client/dist/es5/index.cjs')
 import StoryblokClient from 'storyblok-js-client/dist/es5/index.es'
 ```
 
-## Documentation
+### Documentation
 
-### Class `Storyblok`
+#### Class `Storyblok`
 
 **Parameters**
 
@@ -115,7 +131,7 @@ import StoryblokClient from 'storyblok-js-client/dist/es5/index.es'
   - (`richTextSchema` Object, optional - your custom schema for RichTextRenderer)
 - (`endpoint` String, optional)
 
-### Activating request cache
+#### Activating request cache
 
 The Storyblok client comes with a caching mechanism.
 When initializing the Storyblok client you can define a cache provider for caching the requests in memory.
@@ -130,7 +146,7 @@ let Storyblok = new StoryblokClient({
   }
 })
 ```
-### Passing response interceptor
+#### Passing response interceptor
 
 The Storyblok client lets you pass a function that serves as a response interceptor to axios.
 Usage:
@@ -153,7 +169,7 @@ let Storyblok = new StoryblokClient({
 })
 ```
 
-### Method `Storyblok#get`
+#### Method `Storyblok#get`
 
 With this method you can get single or multiple items. The multiple items are paginated and you will receive 25 items per page by default. If you want to get all items at once use the `getAll` method.
 
@@ -177,7 +193,7 @@ Storyblok
   })
 ```
 
-### Method `Storyblok#getAll`
+#### Method `Storyblok#getAll`
 
 With this method you can get all items at once.
 
@@ -202,7 +218,7 @@ Storyblok
   })
 ```
 
-### Method `Storyblok#post` (only management api)
+#### Method `Storyblok#post` (only management api)
 
 **Parameters**
 - `[return]` Promise, Object `response`
@@ -224,7 +240,7 @@ Storyblok
   })
 ```
 
-### Method `Storyblok#put` (only management api)
+#### Method `Storyblok#put` (only management api)
 
 **Parameters**
 - `[return]` Promise, Object `response`
@@ -246,7 +262,7 @@ Storyblok
   })
 ```
 
-### Method `Storyblok#delete` (only management api)
+#### Method `Storyblok#delete` (only management api)
 
 **Parameters**
 - `[return]` Promise, Object `response`
@@ -266,7 +282,7 @@ Storyblok
   })
 ```
 
-### Method `Storyblok#flushCache`
+#### Method `Storyblok#flushCache`
 
 **Parameters**
 
@@ -278,7 +294,7 @@ Storyblok
 Storyblok.flushCache()
 ```
 
-### Method `Storyblok#setComponentResolver`
+#### Method `Storyblok#setComponentResolver`
 
 **Parameters**
 
@@ -310,7 +326,7 @@ Storyblok.setComponentResolver((component, blok) => {
 })
 ```
 
-### Method `Storyblok#richTextResolver.render`
+#### Method `Storyblok#richTextResolver.render`
 
 **Parameters**
 - `[return]` String, Rendered html of a richtext field
@@ -322,9 +338,9 @@ Storyblok.setComponentResolver((component, blok) => {
 Storyblok.richTextResolver.render(blok.richtext)
 ```
 
-## Code examples
+### Code examples
 
-### Filter by content type values and path
+#### Filter by content type values and path
 
 ~~~javascript
 const StoryblokClient = require('storyblok-js-client')
@@ -366,7 +382,7 @@ client.get('cdn/stories', {
   })
 ~~~
 
-### Download all content from Storyblok
+#### Download all content from Storyblok
 
 Following a code example using the storyblok-js-client to backup all content on your local filesystem inside a 'backup' folder.
 
@@ -408,7 +424,7 @@ let getStories = (page) => {
 getStories(1)
 ~~~
 
-### Initialize with a proxy server
+#### Initialize with a proxy server
 
 ~~~javascript
 const proxy = {
@@ -430,7 +446,7 @@ const storyblok = new StoryblokClient({
 Read more about proxy settings in axios [documentation](https://github.com/axios/axios)
 
 
-### How to define a custom schema for the RichTextRenderer
+#### How to define a custom schema for the RichTextRenderer
 
 To define how to add some classes to specific html attributes rendered by the rich text renderer, you need your own schema definition. With this new schema, you can pass it as the `richTextSchema` option when instantiate the `StoryblokClient` class. You **must** follow the [default schema](https://github.com/storyblok/storyblok-js-client/blob/master/source/schema.js) to do this.
 
@@ -518,8 +534,21 @@ let rendered = rteResolver.render({
 console.log(rendered)
 ~~~
 
-## Contribution
+## 🔗 Related Links
 
-Fork me on [Github](https://github.com/storyblok/storyblok-js-client).
+* **[Storyblok & Javascript on GitHub](https://github.com/search?q=org%3Astoryblok+topic%3Ajavascript)**: Check all of our Javascript open source repos;
+* **[Technology Hub](https://www.storyblok.com/technologies)**: We prepared technology hubs so that you can find selected beginner tutorials, videos, boilerplates, and even cheatsheets all in one place;
+* **[Storyblok CLI](https://github.com/storyblok/storyblok)**: A simple CLI for scaffolding Storyblok projects and fieldtypes.
 
+## ℹ️ More Resources
+
+### Support
+
+* Bugs or Feature Requests? [Submit an issue](../../../issues/new);
+
+* Do you have questions about Storyblok or you need help? [Join our Discord Community](https://discord.gg/jKrbAMz).
+
+### Contributing
+
+Please see our [contributing guidelines](https://github.com/storyblok/.github/blob/master/contributing.md) and our [code of conduct](https://www.storyblok.com/trust-center#code-of-conduct).
 This project use [semantic-release](https://semantic-release.gitbook.io/semantic-release/) for generate new versions by using commit messages and we use the Angular Convention to naming the commits. Check [this question](https://semantic-release.gitbook.io/semantic-release/support/faq#how-can-i-change-the-type-of-commits-that-trigger-a-release) about it in semantic-release FAQ.
