@@ -1,6 +1,6 @@
 <div align="center">
 	<h1 align="center">Universal JavaScript SDK for Storyblok's API</h1>
-	<p align="center">This client is a thin wrapper for the [Storyblok](http://www.storyblok.com?utm_source=github.com&utm_medium=readme&utm_campaign=storyblok-js-client) API's to use in Node.js and the browser.</p>
+	<p align="center">This client is a thin wrapper for the <a href="http://www.storyblok.com?utm_source=github.com&utm_medium=readme&utm_campaign=storyblok-js-client" target="_blank">Storyblok</a> API's to use in Node.js and the browser.</p>
 </div>
 
 <p align="center">
