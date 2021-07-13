@@ -7,6 +7,12 @@
   <a href="https://npmjs.com/package/storyblok-js-client">
     <img src="https://img.shields.io/npm/v/storyblok-js-client/latest.svg?style=flat-square&color=09b3af" alt="Storyblok JS Client" />
   </a>
+  <a href="https://npmjs.com/package/storyblok-js-client" rel="nofollow">
+    <img src="https://img.shields.io/npm/dt/storyblok-js-client.svg?style=appveyor&color=09b3af" alt="npm">
+  </a>
+  <a href="https://david-dm.org/storyblok/storyblok-js-client" rel="nofollow">
+    <img src="https://img.shields.io/david/storyblok/storyblok-js-client?style=appveyor&color=09b3af" alt="Dependencies" >
+  </a>
   <a href="https://discord.gg/jKrbAMz">
    <img src="https://img.shields.io/discord/700316478792138842?label=Join%20Our%20Discord%20Community&style=appveyor&logo=discord&color=09b3af">
    </a>
