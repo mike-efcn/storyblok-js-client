@@ -97,6 +97,8 @@ export interface StoryData<Content = StoryblokComponent<string> & { [index: stri
   published_at: string | null
   first_published_at: string | null
   slug: string
+  lang: string
+  translated_slugs?: {path: string, name: string|null, lang: StoryData['lang']}[]
   sort_by_date: string | null
   tag_list: string[]
   uuid: string
@@ -151,6 +153,7 @@ export interface StoriesParams {
   fallback_lang?: string
   first_published_at_gt?: string
   first_published_at_lt?: string
+  level?: number
   published_at_gt?: string
   published_at_lt?: string
   by_slugs?: string
