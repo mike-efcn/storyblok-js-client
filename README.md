@@ -1,4 +1,7 @@
 <div align="center">
+	<a  href="https://www.storyblok.com?utm_source=github.com&utm_medium=readme&utm_campaign=storyblok-js-client"  align="center">
+		<img  src="https://a.storyblok.com/f/88751/1776x360/cf3187a5b5/sb-js-sdk.png"  alt="Storyblok Logo">
+	</a>
 	<h1 align="center">Universal JavaScript SDK for Storyblok's API</h1>
 	<p align="center">This client is a thin wrapper for the <a href="http://www.storyblok.com?utm_source=github.com&utm_medium=readme&utm_campaign=storyblok-js-client" target="_blank">Storyblok</a> API's to use in Node.js and the browser.</p>
 </div>
@@ -182,7 +185,7 @@ With this method you can get single or multiple items. The multiple items are pa
 **Parameters**
 - `[return]` Promise, Object `response`
 - `path` String, Path (can be `cdn/stories`, `cdn/tags`, `cdn/datasources`, `cdn/links`)
-- `options` Object, Options can be found in the [API documentation](https://www.storyblok.com/docs/api/content-delivery).
+- `options` Object, Options can be found in the [API documentation](https://www.storyblok.com/docs/api/content-delivery?utm_source=github.com&utm_medium=readme&utm_campaign=storyblok-js-client).
 
 **Example**
 
@@ -206,7 +209,7 @@ With this method you can get all items at once.
 **Parameters**
 - `[return]` Promise, Array of entities
 - `path` String, Path (can be `cdn/stories`, `cdn/tags`, `cdn/datasources`, `cdn/links`)
-- `options` Object, Options can be found in the [API documentation](https://www.storyblok.com/docs/api/content-delivery).
+- `options` Object, Options can be found in the [API documentation](https://www.storyblok.com/docs/api/content-delivery?utm_source=github.com&utm_medium=readme&utm_campaign=storyblok-js-client).
 - `entity` String, Storyblok entity like stories, links or datasource. It's optional.
 
 **Example**
@@ -228,7 +231,7 @@ Storyblok
 
 **Parameters**
 - `[return]` Promise, Object `response`
-- `path` String, Path (`spaces/*`, ... see more at https://www.storyblok.com/docs/management-api/authentication)
+- `path` String, Path (`spaces/*`, ... see more at https://www.storyblok.com/docs/management-api/authentication?utm_source=github.com&utm_medium=readme&utm_campaign=storyblok-js-client)
 - `payload` Object
 
 **Example**
@@ -250,7 +253,7 @@ Storyblok
 
 **Parameters**
 - `[return]` Promise, Object `response`
-- `path` String, Path (`spaces/*`, ... see more at https://www.storyblok.com/docs/management-api/authentication)
+- `path` String, Path (`spaces/*`, ... see more at https://www.storyblok.com/docs/management-api/authentication?utm_source=github.com&utm_medium=readme&utm_campaign=storyblok-js-client)
 - `payload` Object
 
 **Example**
