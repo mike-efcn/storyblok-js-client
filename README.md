@@ -1,6 +1,6 @@
 <div align="center">
 	<a  href="https://www.storyblok.com?utm_source=github.com&utm_medium=readme&utm_campaign=storyblok-js-client"  align="center">
-		<img  src="https://a.storyblok.com/f/88751/1776x360/cf3187a5b5/sb-js-sdk.png"  alt="Storyblok Logo">
+		<img  src="https://a.storyblok.com/f/88751/1776x360/4d075611c6/sb-js-sdk.png"  alt="Storyblok Logo">
 	</a>
 	<h1 align="center">Universal JavaScript SDK for Storyblok's API</h1>
 	<p align="center">This client is a thin wrapper for the <a href="http://www.storyblok.com?utm_source=github.com&utm_medium=readme&utm_campaign=storyblok-js-client" target="_blank">Storyblok</a> API's to use in Node.js and the browser.</p>
